@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MettyHair - User Profile</title>
+    <link rel="stylesheet" href="asset/css/styles.css" />
+    <link rel="stylesheet" href="asset/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Markup -->
+    <div class="page-header">
+      <!-- Top navigation -->
+      <div class="top-nav">
+        <div class="brand-logo">
+          <a href="index.html" class="brand">Metty<span>hair</span></a>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search here..."
+          />
+          <input type="submit" class="btn-search" value="Search" />
+        </div>
+        <div class="action-btns">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <div class="cart-logo">
+            <a href="cart.html"
+              ><i class="fas fa-shopping-cart"></i
+              ><span class="text"> - 0 items</span></a
+            >
+          </div>
+          <div class="user-logo">
+            <span
+              ><i class="fas fa-user"></i
+              ><span class="arrow"><i class="fas fa-angle-down"></i></span
+            ></span>
+            <ul class="auth-dropdown">
+              <li>
+                <a href="login.html"><i class="fas fa-lock"></i>Login</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-pencil-alt"></i> Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page navigation -->
+      <div class="container">
+        <div class="page-nav">
+          <nav class="nav-holder">
+            <div class="menu-toggle">
+              <h2 class="menu">Menu</h2>
+              <span class="toggle"><i class="fas fa-bars"></i></span>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-link active-link">
+                <a class="link" href="index.html">Home</a>
+              </li>
+              <li class="nav-link">
+                <a class="link" href="products.html">Online Store</a>
+              </li>
+              <li class="nav-link"><a class="link" href="#">Policy</a></li>
+              <li class="nav-link">
+                <a class="link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-link"><a class="link" href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+      <div class="container">
+        <div class="profile-info row">
+          <aside class="col-40">
+            <div class="profile-card">
+              <div class="profile-img">
+                <img src="asset/images/image-1.jpeg" alt="profile image" />
+                <p class="heading">Profile Image</p>
+              </div>
+            </div>
+          </aside>
+          <main class="col-60">
+            <div class="tabs">
+              <div class="tab-links">
+                <a href="#" class="tab-btn active">User Profile</a>
+                <a href="#" class="tab-btn">Update Profile</a>
+                <a href="#" class="tab-btn">Change Passward</a>
+              </div>
+
+              <!-- Nav Tabs Body-->
+              <div class="tab-content">
+                <!-- First tab pane -->
+                <div class="tab-pane profile-pane show" id="tab-1">
+                  <h3 class="heading">User Profile Information</h3>
+                  <div class="user-info">
+                    <h5 class="firstname">First Name: <span>Iremide</span></h5>
+                    <h5 class="firstname">Last Name: <span>Emmanuel</span></h5>
+                    <h5 class="firstname">
+                      Email Address: <span>ire@gmail.com</span>
+                    </h5>
+                  </div>
+                  
+                </div>
+                <!-- Second tab pane -->
+                <div class="tab-pane profile-pane" id="tab-2">
+                  <h2 class="heading">Update Profile Information</h2>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="fname">First Name</label>
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="fname"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="lname">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="lname"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input
+                        type="email"
+                        class="form-input"
+                        id="email"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="image">Profile Image</label>
+                      <input
+                        type="file"
+                        class="form-input"
+                        id="image"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <input
+                      type="submit"
+                      value="Update Profile"
+                      class="btn btn-update"
+                    />
+                  </form>
+                </div>
+                <!-- Third tab pane -->
+                <div class="tab-pane profile-pane" id="tab-3">
+                  <h2 class="heading">Update Password</h2>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="current-password">Current Password</label>
+                      <input
+                        type="password"
+                        class="form-input"
+                        id="current-password"
+                        placeholder="Current Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="password">New Password</label>
+                      <input
+                        type="password"
+                        class="form-input"
+                        id="password"
+                        placeholder="New Password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="confirm-password">Confirm Password</label>
+                      <input
+                        type="password"
+                        class="form-input"
+                        id="confirm-password"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+
+                    <input
+                      type="submit"
+                      value="Update Password"
+                      class="btn btn-update"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suggested Product Section -->
+    <div class="container">
+      <div class="suggested-product-section">
+        <h2 class="heading">Suggested for you</h2>
+        <div class="suggested-products row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="site-map">
+              <h2 class="footer-heading">Site Map</h2>
+              <ul class="footer-links">
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Installment Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About MettyHair</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="Products">
+              <h2 class="footer-heading">products</h2>
+              <ul class="footer-links">
+                <li><a href="#">Bone Straight</a></li>
+                <li><a href="#">Human Hair</a></li>
+                <li><a href="#">Human-hair Blend</a></li>
+                <li><a href="#">Curly Bouncing Hair</a></li>
+                <li><a href="#">Short Hair</a></li>
+                <li><a href="#">Luxury Hair</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="socials row">
+              <div class="brand-logo footer-logo">
+                <a href="#" class="brand">Metty<span>hair</span></a>
+              </div>
+              <ul class="social-links row">
+                <li>
+                  <a class="facebook" href="#"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="insta" href="#"
+                    ><i class="fab fa-instagram-square"></i
+                  ></a>
+                </li>
+                <li class="watsap">
+                  <i class="fab fa-whatsapp"></i>: <span>08114787914</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="asset/js/product.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MettyHair - Products Details</title>
+    <link rel="stylesheet" href="asset/css/styles.css " />
+    <link rel="stylesheet" href="asset/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Markup -->
+    <div class="page-header p-det">
+      <!-- Top navigation -->
+      <div class="top-nav">
+        <div class="brand-logo">
+          <a href="index.html" class="brand">Metty<span>hair</span></a>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search here..."
+          />
+          <input type="submit" class="btn-search" value="Search" />
+        </div>
+        <div class="action-btns">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <div class="cart-logo">
+            <a href="cart.html"
+            ><i class="fas fa-shopping-cart"></i
+            ><span class="text"> - 0 items</span></a
+          >
+          </div>
+          <div class="user-logo">
+            <span
+              ><i class="fas fa-user"></i
+              ><span class="arrow"><i class="fas fa-angle-down"></i></span
+            ></span>
+            <ul class="auth-dropdown">
+              <li>
+                <a href="login.html"><i class="fas fa-lock"></i>Login</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-pencil-alt"></i> Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page navigation -->
+      <div class="container">
+        <div class="page-nav">
+          <nav class="nav-holder">
+            <div class="menu-toggle">
+              <h2 class="menu">Menu</h2>
+              <span class="toggle"><i class="fas fa-bars"></i></span>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-link active-link">
+                <a class="link" href="index.html">Home</a>
+              </li>
+              <li class="nav-link">
+                <a class="link" href="products.html">Online Store</a>
+              </li>
+              <li class="nav-link"><a class="link" href="#">Policy</a></li>
+              <li class="nav-link">
+                <a class="link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-link"><a class="link" href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!------------Product Image Slider --------------->
+    <section class="products-info">
+      <div class="container">
+        <div class="product-slider row">
+          <div class="col-40">
+            <div class="product-top-img">
+              <img
+                class="main-image"
+                src="asset/images/image-4.jpeg"
+                alt="Current Product Image"
+              />
+              <div class="thumbnails">
+                <div class="thumb">
+                  <img
+                    src="asset/images/image-4.jpeg"
+                    class="thumb-img active"
+                    alt="product Image"
+                  />
+                </div>
+                <div class="thumb">
+                  <img
+                    src="asset/images/image-1.jpeg"
+                    class="thumb-img"
+                    alt="product Image"
+                  />
+                </div>
+                <div class="thumb">
+                  <img
+                    src="asset/images/image-2.jpeg"
+                    class="thumb-img"
+                    alt="product Image"
+                  />
+                </div>
+                <div class="thumb">
+                  <img
+                    src="asset/images/image-3.jpeg"
+                    class="thumb-img"
+                    alt="product Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-60">
+            <div class="product-details">
+              <h2 class="card-title">Product Name</h2>
+              <h4 class="product-type">
+                Product Type: <span>Human Hair</span>
+              </h4>
+              <div class="review">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span class="remark">(Verified product ratings)</span>
+              </div>
+              <h3 class="sec-heading">Specification</h3>
+              <p class="short-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda dicta, consequatur totam iure dolores recusandae,
+                corporis nobis voluptatum accusantium excepturi cum hic tempora
+                odio reiciendis distinctio quos, quam non libero.
+              </p>
+              <h3 class="sec-heading">Price</h3>
+              <div class="pricing">
+                <span class="offer-price">₦100,000</span>
+                <span class="listing-price">₦200,000</span>
+              </div>
+              <div class="qty">
+                <label for="quantity">Quantity: </label>
+                <input
+                  type="number"
+                  id="quantiy"
+                  class="form-input"
+                  value="1"
+                  min="1"
+                />
+              </div>
+              <div class="product-action row">
+                <a href="#" class="btn btn-cart">Add to Cart</a>
+                <a href="#" class="btn btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------End Product Image Slider ----------->
+
+    <!------------Product Review tab------------------>
+    <section class="review-section">
+      <div class="container">
+        <div class="tabs row">
+          <div class="col-20">
+            <div class="tab-links">
+              <button class="tab-btn active" data-id="tab-1">
+                Description
+              </button>
+              <button class="tab-btn" data-id="tab-2">Review</button>
+            </div>
+          </div>
+
+          <!-- Nav Tabs Body-->
+          <div class="col-80">
+            <div class="tab-content">
+              <!-- First tab pane -->
+              <div class="tab-pane long-desc show" id="tab-1">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Similique fugiat, tempora omnis vero expedita distinctio
+                  consectetur iste ab magni ratione aliquam, nam harum modi
+                  animi beatae! Quaerat esse laborum repudiandae. Mollitia,
+                  beatae numquam vel tempora dolore maxime aperiam labore
+                  nostrum reiciendis, ea facere rem illum rerum harum obcaecati
+                  animi ullam voluptate. Voluptatibus totam asperiores
+                  praesentium, corrupti quam quibusdam provident quo.
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Similique fugiat, tempora omnis vero expedita distinctio
+                  consectetur iste ab magni ratione aliquam, nam harum modi
+                  animi beatae! Quaerat esse laborum repudiandae. Mollitia,
+                  beatae numquam vel tempora dolore maxime aperiam labore
+                  nostrum reiciendis, ea facere rem illum rerum harum obcaecati
+                  animi ullam voluptate. Voluptatibus totam asperiores
+                  praesentium, corrupti quam quibusdam provident quo.
+                </p>
+              </div>
+
+              <!-- Second tab pane -->
+              <div class="tab-pane customer-reviews" id="tab-2">
+                <button class="btn add-review-btn">Add Review</button>
+                <h3 class="review-heading">Customer Reviews</h3>
+                <div class="review-card">
+                  <div class="review-title">
+                    <span class="summary">We love the Product</span>
+                    <span class="date"><i class="far fa-calendar-alt"></i> 1 day ago</ispan>
+                  </div>
+                  <p class="main-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem aut, harum error magnam ut laboriosam repellendus soluta voluptate. Doloremque laudantium vero quod sapiente neque, dolorem nihil doloribus dolore placeat.</p>
+                </div>
+                <div class="review-card">
+                  <div class="review-title">
+                    <span class="summary">We love the Product</span>
+                    <span class="date"><i class="far fa-calendar-alt"></i> 1 day ago</ispan>
+                  </div>
+                  <p class="main-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem aut, harum error magnam ut laboriosam repellendus soluta voluptate. Doloremque laudantium vero quod sapiente neque, dolorem nihil doloribus dolore placeat.</p>
+                </div>
+                <div class="review-card">
+                  <div class="review-title">
+                    <span class="summary">We love the Product</span>
+                    <span class="date"><i class="far fa-calendar-alt"></i> 1 day ago</ispan>
+                  </div>
+                  <p class="main-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem aut, harum error magnam ut laboriosam repellendus soluta voluptate. Doloremque laudantium vero quod sapiente neque, dolorem nihil doloribus dolore placeat.</p>
+                </div>
+              </div>
+
+              <!-- Third tab pane -->
+              <div class="tab-pane add-review-form" id="tab-3">
+                <h2 class="review-heading">Product Review Form</h2>
+                <h3 class="review-sub-heading">Thanks for your patronage. Please Write your review</h3>
+                <div class="responsive-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Criteria/Ratings</th>
+                        <th>1 star</th>
+                        <th>2 stars</th>
+                        <th>3 stars</th>
+                        <th>4 stars</th>
+                        <th>5 stars</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="cell-label">Quanlity</td>
+                        <td><input type="radio" name="quality" value="1"></td>
+                        <td><input type="radio" name="quality" value="2"></td>
+                        <td><input type="radio" name="quality" value="3"></td>
+                        <td><input type="radio" name="quality" value="4"></td>
+                        <td><input type="radio" name="quality" value="5"></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-label">Price</td>
+                        <td><input type="radio" name="price" value="1"></td>
+                        <td><input type="radio" name="price" value="2"></td>
+                        <td><input type="radio" name="price" value="3"></td>
+                        <td><input type="radio" name="price" value="4"></td>
+                        <td><input type="radio" name="price" value="5"></td>
+                      </tr>
+                      <tr>
+                        <td class="cell-label">Value</td>
+                        <td><input type="radio" name="value" value="1"></td>
+                        <td><input type="radio" name="value" value="2"></td>
+                        <td><input type="radio" name="value" value="3"></td>
+                        <td><input type="radio" name="value" value="4"></td>
+                        <td><input type="radio" name="value" value="5"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <form action="" class="review-form">
+                  <div class="form-group">
+                    <label for="name">Your Name<span>*</span></label>
+                  <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                  </div>
+                  <div class="form-group">
+                    <label for="review-summary">Review Summary<span>*</span></label>
+                  <input type="text" id="review-summary" class="form-input" placeholder="Review Summary">
+                  </div>
+                  <div class="form-group">
+                    <label for="review">Review<span>*</span></label>
+                  <textarea  id="review" class="form-input" cols="10" rows="5"></textarea>
+                  </div>
+                  <input type="submit" value="Submit Review" class="btn btn-review">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------End Product Review tab-------------->
+
+    <!------------ Related Product Section ----------->
+      <div class="container">
+       <div class="related-product-section">
+        <h2 class="heading">Related Products</h2>
+        <div class="related-products row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <a href="productDetails.html"
+                  ><img src="asset/images/image-2.jpeg" alt="Product Image"
+                /></a>
+              </div>
+              <a href="productDetails.html">
+                <div class="card-body">
+                  <h3 class="card-title">Product Name</h3>
+                  <p class="short-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    porro maiores quos ...
+                  </p>
+                  <div class="review">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="price-group">
+                    <p class="offer-price">&#8358;100,000</p>
+                    <p class="listing-price">&#8358;200,000</p>
+                  </div>
+                </div>
+              </a>
+              <div class="action-cart">
+                <a href="#" class="btn btn-add-cart">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="site-map">
+              <h2 class="footer-heading">Site Map</h2>
+              <ul class="footer-links">
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Installment Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About MettyHair</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="Products">
+              <h2 class="footer-heading">products</h2>
+              <ul class="footer-links">
+                <li><a href="#">Bone Straight</a></li>
+                <li><a href="#">Human Hair</a></li>
+                <li><a href="#">Human-hair Blend</a></li>
+                <li><a href="#">Curly Bouncing Hair</a></li>
+                <li><a href="#">Short Hair</a></li>
+                <li><a href="#">Luxury Hair</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="socials row">
+              <div class="brand-logo footer-logo">
+                <a href="#" class="brand">Metty<span>hair</span></a>
+              </div>
+              <ul class="social-links row">
+                <li>
+                  <a class="facebook" href="#"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="insta" href="#"
+                    ><i class="fab fa-instagram-square"></i
+                  ></a>
+                </li>
+                <li class="watsap">
+                  <i class="fab fa-whatsapp"></i>: <span>08114787914</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="asset/js/product.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MettyHair - Products Details</title>
+    <link rel="stylesheet" href="asset/css/styles.css " />
+    <link rel="stylesheet" href="asset/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="shopping-cart-page">
+    <!-- Navigation Markup -->
+    <div class="page-header p-det">
+      <!-- Top navigation -->
+      <div class="top-nav">
+        <div class="brand-logo">
+          <a href="index.html" class="brand">Metty<span>hair</span></a>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search here..."
+          />
+          <input type="submit" class="btn-search" value="Search" />
+        </div>
+        <div class="action-btns">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <div class="cart-logo">
+            <span
+              ><i class="fas fa-shopping-cart"></i
+              ><span class="text"> - 0 items</span></span
+            >
+          </div>
+          <div class="user-logo">
+            <span
+              ><i class="fas fa-user"></i
+              ><span class="arrow"><i class="fas fa-angle-down"></i></span
+            ></span>
+            <ul class="auth-dropdown">
+              <li>
+                <a href="login.html"><i class="fas fa-lock"></i>Login</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-pencil-alt"></i> Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page navigation -->
+      <div class="container">
+        <div class="page-nav">
+          <nav class="nav-holder">
+            <div class="menu-toggle">
+              <h2 class="menu">Menu</h2>
+              <span class="toggle"><i class="fas fa-bars"></i></span>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-link active-link">
+                <a class="link" href="index.html">Home</a>
+              </li>
+              <li class="nav-link">
+                <a class="link" href="products.html">Online Store</a>
+              </li>
+              <li class="nav-link"><a class="link" href="#">Policy</a></li>
+              <li class="nav-link">
+                <a class="link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-link"><a class="link" href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!------------Product Cart --------------->
+    <div class="shopping-cart">
+      <div class="container">
+        <div class="shopping-cart-details">
+          <div class="shopping-cart-header">
+            <span class="cart-heading">Shopping Cart </span>
+            <span class="cart-heading">(0 item) </span>
+          </div>
+          <div class="cart-card row">
+            <div class="cart-image">
+              <img src="asset/images/image-1.jpeg" alt="Product Image " />
+            </div>
+            <div class="cart-info">
+              <div class="cart-name">
+                <a href="productDetails.html" class="cart-product-name"
+                  >Wig Iremide Curly</a
+                >
+              </div>
+              <div class="review">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span class="remark">(5 Reviews)</span>
+              </div>
+              <p class="cart-product-type">Human hair</p>
+            </div>
+            <div class="cart-qty">
+              <label for="qty-input">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                max="10"
+                id="qty-input"
+                class="form-input form-qty"
+              />
+            </div>
+            <div class="cart-price">
+              <span class="price-label">Price</span>
+              <span class="offer-price">₦100,000</span>
+            </div>
+            <div class="cart-sub-total">
+              <span class="sub-total-label">Subtotal</span>
+              <span class="sub-total">₦100,000</span>
+            </div>
+            <div class="cart-action">
+              <a href="#" class="btn shopping-cart-btn">Check Out</a>
+              <button class="btn cart-remove">Remove</button>
+            </div>
+          </div>
+          
+          <div class="cart-total">
+            <span class="total-label">Total:</span>
+            <span class="total">₦300,000</span>
+          </div>
+          <div class="product-action row">
+            <a href="products.html" class="btn btn-cart">Continue Shopping</a>
+            <a href="#" class="btn btn-buy">Proceed to Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------End Product Cart----------->
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="site-map">
+              <h2 class="footer-heading">Site Map</h2>
+              <ul class="footer-links">
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Installment Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About MettyHair</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="Products">
+              <h2 class="footer-heading">products</h2>
+              <ul class="footer-links">
+                <li><a href="#">Bone Straight</a></li>
+                <li><a href="#">Human Hair</a></li>
+                <li><a href="#">Human-hair Blend</a></li>
+                <li><a href="#">Curly Bouncing Hair</a></li>
+                <li><a href="#">Short Hair</a></li>
+                <li><a href="#">Luxury Hair</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="socials row">
+              <div class="brand-logo footer-logo">
+                <a href="#" class="brand">Metty<span>hair</span></a>
+              </div>
+              <ul class="social-links row">
+                <li>
+                  <a class="facebook" href="#"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="insta" href="#"
+                    ><i class="fab fa-instagram-square"></i
+                  ></a>
+                </li>
+                <li class="watsap">
+                  <i class="fab fa-whatsapp"></i>: <span>08114787914</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="asset/js/product.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
